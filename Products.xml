@@ -1,95 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/css" href="style.css" ?>
-
-<Products>
-    <Product>
-        <Category>Breakfast</Category>
-        <Code>Code: 0000-01</Code>
-        <Name>Name: Pancake Mix</Name>
-        <Description>A quick and easy mix for fresh pancakes!</Description>
-        <Quantity>Quantity: 100</Quantity>
-        <UnitPrice>Price: 5.00</UnitPrice>
-    </Product>
- 
-    <Product>
-        <Category>Dessert</Category>
-        <Code>Code: 0000-02</Code>
-        <Name>Name: Cupcake Mix</Name>
-        <Description>Easy Homemade cupcakes</Description>
-        <Quantity>Qunatity: 10</Quantity>
-        <UnitPrice>Price: 4.00</UnitPrice>
-    </Product>
-
-    <Product>
-        <Category>Medicine</Category>
-        <Code>Code: 0000-03</Code>
-        <Name>Name: Honey Lemon Lozenge</Name>
-        <Description>Menthol logsenges made with no artificial flavoring</Description>
-        <Quantity>Qunatity: 50</Quantity>
-        <UnitPrice>Price: 2.00</UnitPrice>
-    </Product>
-
-    <Product>
-        <Category>Seafood</Category>
-        <Code>Code: 0000-12</Code>
-        <Name>Name: Captain K's Fish</Name>
-        <Description>Delicious maple smoked fish</Description>
-        <Quantity>Quntity: 60</Quantity>
-        <UnitPrice>Price: 10.00</UnitPrice>
-    </Product>
-
-    <Product>
-        <Category>Breakfast</Category>
-        <Code>Code: 0000-05</Code>
-        <Name>Name: Frosted Flakes</Name>
-        <Description>Crunchy flake cereal for a great start to your day!</Description>
-        <Quantity>Quntity: 50</Quantity>
-        <UnitPrice>Price: 3.50</UnitPrice>
-    </Product>
-
-    <Product>
-        <Category>Ready made meals</Category>
-        <Code>Code: 0030-11</Code>
-        <Name>Name: Protein Pasta</Name>
-        <Description>Easy quick protein packed raedy made pasta</Description>
-        <Quantity>Quantity: 250</Quantity>
-        <UnitPrice>Price: 6.50</UnitPrice>
-    </Product>
-
-    <Product>
-        <Category>Seafood</Category>
-        <Code>Code: 0010-11</Code>
-        <Name>Name: Seafood Mix</Name>
-        <Description>Assorted mix of fresh seafood</Description>
-        <Quantity>Qauntity: 100</Quantity>
-        <UnitPrice>Price: 11.00</UnitPrice>
-    </Product>
-
-    <Product>
-        <Category>Beverage</Category>
-        <Code>Code: 1030-22</Code>
-        <Name>Name: Cola Buzz</Name>
-        <Description>Coca Cola falvored carbonated drink</Description>
-        <Quantity>Qunatity: 2500</Quantity>
-        <UnitPrice>Price: 2.50</UnitPrice>
-    </Product>
-
-    <Product>
-        <Category>Ready made meals</Category>
-        <Code>Code: 1300-20</Code>
-        <Name>name: Italiano</Name>
-        <Description>Quick fresh delicious pizza</Description>
-        <Quantity>Quntity: 1000</Quantity>
-        <UnitPrice>Price: 5.50</UnitPrice>
-    </Product>
-
-    <Product>
-        <Category>Household items</Category>
-        <Code>Code: 0250-41</Code>
-        <Name>Name: Ultra Soft</Name>
-        <Description>Super soft 2 ply tissue paper</Description>
-        <Quantity>Qunatity: 400</Quantity>
-        <UnitPrice>Price: 4.60</UnitPrice>
-    </Product>
-
- </Products>
+<!-- Product code is the unique identifier. Other elements describe the product. -->
+<products>
+  <product code="101-01"><category>Breakfast</category><name>Golden Oat Granola</name><description>Crunchy oats with toasted almonds and dried fruit.</description><quantity>48</quantity><unitPrice>5.49</unitPrice></product>
+  <product code="102-03"><category>Beverages</category><name>Citrus Sparkling Water</name><description>Lightly carbonated water with natural lemon and lime flavour.</description><quantity>120</quantity><unitPrice>1.25</unitPrice></product>
+  <product code="103-07"><category>Pantry</category><name>Tomato Basil Pasta Sauce</name><description>Slow-cooked tomato sauce with basil and garlic.</description><quantity>36</quantity><unitPrice>3.95</unitPrice></product>
+  <product code="104-12"><category>Snacks</category><name>Sea Salt Pretzel Bites</name><description>Baked wheat pretzel bites with a light sea salt finish.</description><quantity>64</quantity><unitPrice>2.75</unitPrice></product>
+  <product code="105-18"><category>Household</category><name>Eco Dish Soap</name><description>Plant-based concentrated washing-up liquid.</description><quantity>25</quantity><unitPrice>4.80</unitPrice></product>
+  <product code="106-21"><category>Personal Care</category><name>Fresh Mint Toothpaste</name><description>Fluoride toothpaste for everyday cavity protection.</description><quantity>0</quantity><unitPrice>3.40</unitPrice></product>
+  <product code="107-04"><category>Bakery</category><name>Wholegrain Crackers</name><description>Oven-baked crackers made with wholegrain flour.</description><quantity>55</quantity><unitPrice>2.99</unitPrice></product>
+  <product code="108-16"><category>Frozen</category><name>Garden Vegetable Mix</name><description>Frozen peas, carrots, sweetcorn and green beans.</description><quantity>42</quantity><unitPrice>4.25</unitPrice></product>
+  <product code="109-09"><category>Pet Care</category><name>Chicken Cat Food</name><description>Complete wet food made with chicken and added vitamins.</description><quantity>30</quantity><unitPrice>1.60</unitPrice></product>
+  <product code="110-25"><category>Office</category><name>Recycled Notebook</name><description>A5 notebook with 120 ruled recycled-paper pages.</description><quantity>75</quantity><unitPrice>3.10</unitPrice></product>
+</products>

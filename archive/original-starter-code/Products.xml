@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="style.css" ?>
+
+<Products>
+    <Product>
+        <Category>Breakfast</Category>
+        <Code>Code: 0000-01</Code>
+        <Name>Name: Pancake Mix</Name>
+        <Description>A quick and easy mix for fresh pancakes!</Description>
+        <Quantity>Quantity: 100</Quantity>
+        <UnitPrice>Price: 5.00</UnitPrice>
+    </Product>
+ 
+    <Product>
+        <Category>Dessert</Category>
+        <Code>Code: 0000-02</Code>
+        <Name>Name: Cupcake Mix</Name>
+        <Description>Easy Homemade cupcakes</Description>
+        <Quantity>Qunatity: 10</Quantity>
+        <UnitPrice>Price: 4.00</UnitPrice>
+    </Product>
+
+    <Product>
+        <Category>Medicine</Category>
+        <Code>Code: 0000-03</Code>
+        <Name>Name: Honey Lemon Lozenge</Name>
+        <Description>Menthol logsenges made with no artificial flavoring</Description>
+        <Quantity>Qunatity: 50</Quantity>
+        <UnitPrice>Price: 2.00</UnitPrice>
+    </Product>
+
+    <Product>
+        <Category>Seafood</Category>
+        <Code>Code: 0000-12</Code>
+        <Name>Name: Captain K's Fish</Name>
+        <Description>Delicious maple smoked fish</Description>
+        <Quantity>Quntity: 60</Quantity>
+        <UnitPrice>Price: 10.00</UnitPrice>
+    </Product>
+
+    <Product>
+        <Category>Breakfast</Category>
+        <Code>Code: 0000-05</Code>
+        <Name>Name: Frosted Flakes</Name>
+        <Description>Crunchy flake cereal for a great start to your day!</Description>
+        <Quantity>Quntity: 50</Quantity>
+        <UnitPrice>Price: 3.50</UnitPrice>
+    </Product>
+
+    <Product>
+        <Category>Ready made meals</Category>
+        <Code>Code: 0030-11</Code>
+        <Name>Name: Protein Pasta</Name>
+        <Description>Easy quick protein packed raedy made pasta</Description>
+        <Quantity>Quantity: 250</Quantity>
+        <UnitPrice>Price: 6.50</UnitPrice>
+    </Product>
+
+    <Product>
+        <Category>Seafood</Category>
+        <Code>Code: 0010-11</Code>
+        <Name>Name: Seafood Mix</Name>
+        <Description>Assorted mix of fresh seafood</Description>
+        <Quantity>Qauntity: 100</Quantity>
+        <UnitPrice>Price: 11.00</UnitPrice>
+    </Product>
+
+    <Product>
+        <Category>Beverage</Category>
+        <Code>Code: 1030-22</Code>
+        <Name>Name: Cola Buzz</Name>
+        <Description>Coca Cola falvored carbonated drink</Description>
+        <Quantity>Qunatity: 2500</Quantity>
+        <UnitPrice>Price: 2.50</UnitPrice>
+    </Product>
+
+    <Product>
+        <Category>Ready made meals</Category>
+        <Code>Code: 1300-20</Code>
+        <Name>name: Italiano</Name>
+        <Description>Quick fresh delicious pizza</Description>
+        <Quantity>Quntity: 1000</Quantity>
+        <UnitPrice>Price: 5.50</UnitPrice>
+    </Product>
+
+    <Product>
+        <Category>Household items</Category>
+        <Code>Code: 0250-41</Code>
+        <Name>Name: Ultra Soft</Name>
+        <Description>Super soft 2 ply tissue paper</Description>
+        <Quantity>Quntity: 400</Quantity>
+        <UnitPrice>Price: 4.60</UnitPrice>
+    </Product>
+
+ </Products>

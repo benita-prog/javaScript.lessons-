@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Get current weather data from WeatherAPI."
+    />
+    <title>Northstar Supply | Weather</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="weather.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-content">
+        <a class="brand" href="index.html">Northstar Supply</a>
+        <nav aria-label="Main navigation">
+          <a class="nav-link" href="index.html">Products</a
+          ><a class="nav-link active" href="weather.html" aria-current="page"
+            >Weather</a
+          >
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <section class="hero" aria-labelledby="page-title">
+        <p class="eyebrow">JSON web service</p>
+        <h1 id="page-title">Current weather</h1>
+        <p>
+          Enter a city and your WeatherAPI key to retrieve current conditions.
+        </p>
+      </section>
+      <div class="weather-layout">
+        <section class="weather-form" aria-labelledby="weather-form-title">
+          <h2 id="weather-form-title">Check a city</h2>
+          <form id="weather-form" novalidate>
+            <div class="form-field">
+              <label for="city">City</label
+              ><input
+                id="city"
+                name="city"
+                type="text"
+                autocomplete="address-level2"
+                placeholder="Dublin"
+                required
+              />
+            </div>
+            <div class="form-field">
+              <label for="api-key">WeatherAPI key</label
+              ><!-- A key is never hard-coded: it stays only in the visitor's browser session. --><input
+                id="api-key"
+                name="api-key"
+                type="password"
+                autocomplete="off"
+                placeholder="Paste your key here"
+                required
+              />
+              <p class="help-text">
+                Get a free key from weatherapi.com. It is not saved when you
+                close the page.
+              </p>
+            </div>
+            <button type="submit">Get weather</button>
+          </form>
+          <p
+            id="weather-message"
+            class="status-message"
+            role="status"
+            aria-live="polite"
+          ></p>
+        </section>
+        <section
+          class="weather-results"
+          aria-labelledby="weather-results-title"
+        >
+          <h2 id="weather-results-title">Weather result</h2>
+          <div id="weather-output">
+            <p class="muted-text">Your weather information will appear here.</p>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="container">Weather data supplied by WeatherAPI.com</div>
+    </footer>
+  </body>
+</html>

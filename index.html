@@ -1,21 +1,79 @@
 <!doctype html>
-
 <html lang="en">
   <head>
-    <title>Product Description | XML</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Browse and search the product inventory stored in XML."
+    />
+    <title>Northstar Supply | Product Inventory</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="products.js" defer></script>
   </head>
-
   <body>
-    <h1>Product list</h1>
+    <header class="site-header">
+      <div class="container header-content">
+        <a class="brand" href="index.html">Northstar Supply</a>
+        <nav aria-label="Main navigation">
+          <a class="nav-link active" href="index.html" aria-current="page"
+            >Products</a
+          >
+          <a class="nav-link" href="weather.html">Weather</a>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <section class="hero" aria-labelledby="page-title">
+        <p class="eyebrow">XML product catalogue</p>
+        <h1 id="page-title">Product inventory</h1>
+        <p>
+          Browse the current catalogue or search by the unique product code, for
+          example <strong>101-01</strong>.
+        </p>
+      </section>
+      <section class="search-panel" aria-labelledby="search-title">
+        <h2 id="search-title">Find a product</h2>
+        <!-- The pattern mirrors the product-code rule in Products.xml. -->
+        <form id="product-search-form" novalidate>
+          <label for="product-code">Product code</label>
+          <div class="search-controls">
+            <input
+              id="product-code"
+              name="product-code"
+              type="text"
+              inputmode="numeric"
+              placeholder="101-01"
+              pattern="[0-9]{3}-[0-9]{2}"
+              maxlength="6"
+              aria-describedby="product-code-help"
+            />
+            <button type="submit">Search</button>
+            <button class="button-secondary" id="show-all-button" type="button">
+              Show all
+            </button>
+          </div>
+          <p id="product-code-help" class="help-text">Use the format 123-45.</p>
+        </form>
+        <p
+          id="search-message"
+          class="status-message"
+          role="status"
+          aria-live="polite"
+        ></p>
+      </section>
+      <section aria-labelledby="catalogue-title">
+        <div class="section-heading">
+          <h2 id="catalogue-title">Catalogue</h2>
+          <p id="product-count" class="muted-text"></p>
+        </div>
+        <div id="product-results" class="product-grid" aria-live="polite"></div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        Northstar Supply demonstration web application
+      </div>
+    </footer>
   </body>
-
-  <script>
-    fetch("Products.xml")
-      .then((response) => response.text())
-      .then((data) => {
-        const xml = new DOMParser().parseFromString(data, "application/xml");
-        console.log(xml);
-      });
-  </script>
 </html>

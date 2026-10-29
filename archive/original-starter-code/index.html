@@ -1,0 +1,21 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <title>Product Description | XML</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>Product list</h1>
+  </body>
+
+  <script>
+    fetch("Products.xml")
+      .then((response) => response.text())
+      .then((data) => {
+        const xml = new DOMParser().parseFromString(data, "application/xml");
+        console.log(xml);
+      });
+  </script>
+</html>
