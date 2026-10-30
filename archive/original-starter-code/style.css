@@ -2,6 +2,10 @@ Products {
   background-color: lightcoral;
 }
 
+h1{
+  color: red;
+}
+
 Product {
   display: block;
   width: 400px;

@@ -2,6 +2,7 @@
 
 // One array is used as the application's in-memory catalogue after XML is parsed.
 let products = [];
+
 const results = document.querySelector("#product-results");
 const count = document.querySelector("#product-count");
 const searchForm = document.querySelector("#product-search-form");
