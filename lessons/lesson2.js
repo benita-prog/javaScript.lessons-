@@ -1,5 +1,24 @@
 //conditionals
 
+//Comparison operators and logical operators
+const boyAge = 25;
+
+const boyAgeString = "25";
+
+const hasId = true;
+
+console.log(boyAge === boyAgeString); // false
+
+console.log(boyAge >= 18 && hasId); // true
+
+console.log(boyAge < 13 || boyAge > 65); // false
+
+console.log(!hasId); // false
+
+console.log(5 == "5"); // true   (== converts types first, avoid it)
+
+console.log(5 === "5"); // false  (=== does not convert, always use it)
+
 //The code in if runs only when the condition is true. Otherwise the else code runs.
 
 const age = 17;
@@ -12,6 +31,7 @@ if (age >= 18) {
 
 //else if chains
 const score = 72;
+
 if (score >= 90) {
   console.log("A");
 } else if (score >= 70) {
@@ -23,19 +43,11 @@ if (score >= 90) {
 }
 // B   (72 is not >= 90, but it is >= 70, so we stop there)
 
-
-//Comparison operators and logical operators
-const boyAge = 25;
-const hasId = true;
-console.log(boyAge >= 18 && hasId);    // true
-console.log(boyAge < 13 || boyAge > 65);  // false
-console.log(!hasId);                // false
-console.log(5 == "5");   // true   (== converts types first, avoid it)
-console.log(5 === "5");  // false  (=== does not convert, always use it)
-
 //The ternary operator
 const girlAge = 20;
+
 const ageStatus = girlAge >= 18 ? "adult" : "minor";
+
 console.log(ageStatus); // adult
 
 //Switch statements
@@ -46,12 +58,17 @@ const day = "Sat";
 
 switch (day) {
   case "Sat":
-  case "Sun":              // two cases sharing one result
-    console.log("Weekend");
+    console.log("weekend");
     break;
+
+  case "Sun": // two cases sharing one result
+    console.log("Weekend");
+        break;
+    
   case "Mon":
     console.log("Back to work");
-    break;
+        break;
+    
   default:
     console.log("Weekday");
 }
@@ -62,9 +79,13 @@ switch (day) {
 const n = 1;
 
 switch (n) {
-  case 1: console.log("one");
-  case 2: console.log("two");
-  case 3: console.log("three"); break;
+  case 1:
+    console.log("one");
+  case 2:
+    console.log("two");
+  case 3:
+    console.log("three");
+    break;
 }
 // one
 // two
