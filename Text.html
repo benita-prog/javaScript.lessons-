@@ -1,0 +1,57 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <title>Product Description | XML</title>
+    <!-- stylesheet link -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!--js link-->
+    <script src="./products.js" defer></script>
+    <!-- font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Rubik+Spray+Paint&family=Tiny5+Duo:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--site header-->
+    <header>Sunny's Corner Shop</header>
+    <!--site logo-->
+    <img
+      src="supermarket.gif"
+      alt="Shop logo"
+      style="width: 150px; height: 100px; margin-left: 570px; margin-top: 10px"
+    />
+
+    <!--weather page link-->
+    <button class="button">
+      <a class="nav-link" href="weather.html"><strong>Weather</strong></a>
+    </button>
+    <!--weather logo-->
+    <img
+      src="weather.png"
+      alt="weather logo"
+      style="width: 50px; height: 40px; margin-left: 15px; margin-top: 1px"
+    />
+    <div class="box" style="margin-top: 20px">
+      <h1>Product Inventory</h1>
+      <button class="all-products" onclick="loadProducts()">
+        Show All Products
+      </button>
+      <div class="product-search">
+        <input
+          type="text"
+          id="productCodeInput"
+          placeholder=" Code Number - 1234-56"
+        />
+
+        <button class="getProductBtn" id="getProductBtn">Get Product</button>
+      </div>
+      <div id="productResult"></div>
+    </div>
+  </body>
+</html>
