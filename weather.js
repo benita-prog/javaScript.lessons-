@@ -25,6 +25,7 @@ weatherForm.addEventListener("submit", async (event) => {
   }
   setWeatherMessage("Loading weather data...");
   weatherOutput.innerHTML = '<p class="muted-text">Please wait.</p>';
+  
   try {
     // URLSearchParams safely encodes city names such as "New York".
     const parameters = new URLSearchParams({ key: apiKey, q: city });
